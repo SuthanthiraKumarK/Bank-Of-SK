@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank of SK</title>
+
+    <link rel="shortcut icon" href="./assets/images/bank-logo.jpg" type="image/x-icon">
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./assets/css/sk_bank.css">
+</head>
+
+<body>
+
+<!-- Login-Page  -->
+<div class="before-login">
+<div class=" login-page d-flex flex-column justify-content-between align-items-center">
+
+  <!-- Login-Field  -->
+<div class="container-fluid">
+    <div class="login-field d-flex flex-column align-items-center justify-content-center flex-md-row justify-content-md-around mt-2">
+
+      <!-- Logo -->
+      <div class="login-logo-text">
+        <img src="./assets/images/bank-logo.jpg" alt="sk_bank_logo" class="img-fluid">
+      </div>
+
+      <!-- Text-Logo -->
+      <div class="login-logo-name d-flex mb-4 mb-md-0 mt-md-3">
+        <p class="login-logo-text">Bank Of SK</p>
+      </div>
+
+      <!-- Login-Form -->
+    <div class="login-form d-flex flex-column align-items-center flex-md-row">
+
+      <div class="login-id form-group me-2 mb-2">
+       <input type="text" class="form-control log-id" placeholder="user name">
+      </div>
+
+      <div class="login-password form-group me-2 mb-2">
+       <input type="password" class="form-control log-password" placeholder="pin"  maxlength="4">
+      </div>
+
+      <div class="login-password form-group mb-2 mb-md-2">
+       <a href="#"><i class="fa-solid fa-right-to-bracket fa-lg log-button"></i></a>
+      </div>
+      
+    </div>
+    </div>
+</div>
+
+<!-- Wrapper before Login -->
+<div class="container-fluid">
+  <div class="wrapper mt-4 mb-5 mb-md-0">
+    <img src="./assets/images/front-view-arrangement-economy-elements.jpg" alt="wrapper-image" class="img-fluid rounded wrapper-image">
+  </div>
+</div>
+
+<!-- Copyright -->
+<div class="container-fluid">
+<div class="copy-right mt-4 d-flex justify-content-center">
+  <p>© 2023 Bank of SK by Freedom Kumar</p>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- After Login - UI -->
+<div class="after-login hidden">
+
+  <!-- Header -->
+<div class="post">
+<div class="container-fluid">
+  <div class="header mt-1 pt-2 d-flex me-0 justify-content-between align-items-center">
+  <!-- Greet -->
+    <div class="greet d-flex">
+      <p class="me-1">Welcome,</p>
+      <p class="greetMessage"></p>
+    </div>
+
+    <!-- Logo -->
+    <div class="logo d-flex mb-3 me-5 flex-column justify-content-center align-items-center">
+      <img src="./assets/images/bank-logo.jpg" alt="sk_bank_logo" class="img-fluid">
+    </div>
+  
+    <!-- Log Out -->
+    <div class="log-out d-flex flex-column justify-content-center align-items-center mb-3">
+      <div class="logout-icon">
+        <a href="#"><i class="fa-solid fa-right-from-bracket fa-lg logout-button"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Balance Field -->
+<div class="container-fluid">
+  <div class="current-balance d-flex justify-content-between justify-content-md-around align-items-center pt-2 mt-2 mb-2">
+    <!-- Balance Label & Current date -->
+    <div class="balance-right d-flex flex-column justify-content-center ms-1">
+      <h3 class="label">
+       Current balance
+      </h3>
+      <div class="d-flex">
+      <p class="day-time">As of</p>
+      <p class="day-time day-time-now ms-1"></p>
+    </div>
+    </div>
+
+    <!-- Remaining Balane -->
+    <div class="balance-left me-1">
+      <p class="balance-amount lead"></p>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Transaction Field -->
+<div class="container-fluid d-flex flex-column flex-md-row justify-content-around">
+<!-- Transaction Details -->
+  <div class="transaction-left container-fluid col-12 col-md-6 d-flex flex-column mb-2 me-3 justify-content-start">
+
+    <!-- Entry 1 -->
+     <div class="transaction d-flex justify-content-between align-items-center mb-2 mt-2 pt-3">
+      <div class="details">
+        <p class="transactionDetails transaction-deposit p-1">DEPOSIT</p>
+      </div>
+      <div class="date">
+        <p class="transactionDate">4 days ago</p>
+      </div>
+      <div class="amount">
+        <p class="transactionAmount">13000.00 </p>
+      </div>
+    </div> 
+
+    <!-- Entry 2 -->
+     <div class="transaction d-flex justify-content-between align-items-center mb-2 mt-2 pt-3">
+      <div class="details">
+        <p class="transactionDetails transaction-withdrawl p-1">WITHDRAWL</p>
+      </div>
+      <div class="date">
+        <p class="transactionDate">01/03/2020</p>
+      </div>
+      <div class="amount">
+        <p class="transactionAmount">-1300.00 </p>
+      </div>
+    </div>
+
+  </div>
+
+<!-- Transfering & Loan Details -->
+  <div class="transaction-right container-fluid col-12 col-md-6 d-flex flex-column">
+<!-- Transfer -->
+  <div class="transfer-money p-3 mb-2 d-flex flex-column justify-content-center align-items-center">
+    <div class="label m-2">
+      <h6 class="label-text">Transfer Money</h6>
+    </div>
+    <div class="transfer-field d-flex m-2">
+      <div class="d-flex flex-column justify-content-center align-items-center me-3">
+      <input type="text" name="transfer-userid" id="transfer-userid">
+      <p class="userid-label">Transfer to</p>
+      </div>
+      <div class="d-flex flex-column justify-content-center align-items-center me-3">
+      <input type="number" name="transfer-amount" id="transfer-amount">
+      <p class="transfer-amount-label">Amount</p>
+      </div>
+      <div>
+        <button type="button" class="transfer-button"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </div>
+
+<!-- Loan -->
+<div class="loan mb-2 p-3 d-flex flex-column justify-content-center align-items-center">
+  <div class="label m-2">
+    <h6 class="label-text">Request Loan</h6>
+  </div>
+  <div class="loan-field d-flex m-2">
+    <div class="d-flex flex-column justify-content-center align-items-center me-3">
+    <input type="number" name="loan-amount" id="loan-amount">
+    <p class="userid-label">Amount</p>
+    </div>
+    <div>
+      <button type="button" class="loan-button"><i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+  </div>
+</div>
+
+<!-- Close Account -->
+<div class="close-account p-3 d-flex flex-column justify-content-center align-items-center">
+  <div class="label  m-2">
+    <h6 class="label-text">Close Account</h6>
+  </div>
+  <div class="close-field d-flex m-2">
+    <div class="d-flex flex-column justify-content-center align-items-center me-3">
+    <input type="text" name="close-field-userid" id="close-userid">
+    <p class="userid-label">Confirm User</p>
+    </div>
+    <div class="d-flex flex-column justify-content-center align-items-center me-3">
+    <input type="password" name="close-field-password" id="close-password" maxlength="4">
+    <p class="userid-label">Confirm Pin</p>
+    </div>
+    <div>
+      <button type="button" class="close-button"><i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+
+<!-- Summary -->
+<div class="container-fluid">
+  <div class="summary d-flex justify-content-around align-items-center pt-2 border rounded mt-2 mb-3">
+  <!-- in -->
+    <div class="in ms-1 d-flex flex-column justify-content-center align-items-center">
+      <div class="in-label">
+         <h6 class="summary-label-text">IN</h6>
+      </div>
+    <div class="in-amount">
+      <p class="in-amount-value border rounded p-1"></p>
+    </div>
+    </div>
+
+  <!-- out -->
+     <div class="out d-flex flex-column justify-content-center align-items-center">
+    <div class="out-label">
+      <h6 class="summary-label-text">OUT</h6>
+    </div>
+    <div class="out-amount">
+      <p class="out-amount-value border p-1 rounded"></p>
+    </div>
+     </div>
+
+  <!-- interest -->
+  <div class="interest me-1 d-flex flex-column justify-content-center align-items-center">
+    <div class="interest-label">
+      <h6 class="summary-label-text">INTEREST</h6>
+    </div>
+    <div class="interest-amount">
+      <p class="interest-amount-value border rounded p-1"></p>
+    </div>
+  </div>
+  </div>
+</div>
+
+<!-- Footer / Copyright -->
+<div class="container-fluid">
+   <div class="footer rounded">
+     <p class="footer-text text-center">© 2023 Bank of SK by Freedom Kumar</p>
+   </div>
+</div>
+</div>
+
+      <script src="./assets/js/sk_bank.js"></script>
+</body>
+</html>
